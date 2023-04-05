@@ -12,9 +12,9 @@
 
 ---
 
-'Stuff' with backticks
+`Stuff` with backticks
 
-'''
+```
 # code block
 print '4 spaces'
-'''
+```
