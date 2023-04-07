@@ -4,7 +4,7 @@
 
 1. Visit this [link](https://code.visualstudio.com/) and download the corresponding file for your device to install VScode.
 2. Upon completing the installation process for VScode, you should see a window similar to this.
-![Image](VScode installation screenshot.png)
+![Image](VScode.png)
 3. 
 
 
