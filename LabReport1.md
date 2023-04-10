@@ -21,6 +21,8 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 ``` ssh cs15lsp23xx@ieng6.ucsd.edu ```
 
 5. If it is your first time remotely logging in onto your device, you will get a message asking if you want to continue connecting.  Then, type yes, press enter, and enter your password.  Your terminal is now remotely connected.
+6. Look at the image below to see what a sucessful remote connection looks like.
+![Image](RemoteConnection.png)
 
 ## Step 3: Trying Some Commands
 
@@ -31,5 +33,7 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 ```ls -lat```
 ```ls -a``
 
-2. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
-3
+Note: Look at the image below to see an example.
+![Image](Commands.png)
+2. If there are any errors, check and understand the message that gets printed.
+3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
