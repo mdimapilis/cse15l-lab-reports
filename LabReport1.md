@@ -31,7 +31,7 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 ```cd ~```
 ```cd```
 ```ls -lat```
-```ls -a``
+```ls -a```
 
 Note: Look at the image below to see an example.
 ![Image](Commands.png)
