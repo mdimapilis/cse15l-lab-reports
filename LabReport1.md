@@ -34,6 +34,8 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 ```ls -a```
 
 Note: Look at the image below to see an example.
+
 ![Image](Commands.png)
+
 2. If there are any errors, check and understand the message that gets printed.
 3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
