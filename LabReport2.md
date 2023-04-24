@@ -67,7 +67,7 @@ The bug chosen from lab 3 is the one found in the ```static double averageWithou
 
 * The failure-inducing input for the buggy program is shown below in the code block as a JUnit test.  The method is supposed to to return the average of numbers in an array of type ```double``` without including the lowest value in the array.  However, this input will result in a failure because all the elements in the array are the same value and does not return the correct average since the method does not detect that there is no lowest value since all the elements are the same.
 
-JUnit test with failure-inducing input
+> JUnit test with failure-inducing input
 
 ```
 @Test
@@ -81,7 +81,7 @@ JUnit test with failure-inducing input
 * The input shown in the code block below is a JUnit test that does not induce a failure.  It does not induce a failure because there is value that can be considered the lowest and all the elements in the array are of type ```double``` so these meet all the requirements for the method to work properly.
 Note: The method will still work properly if an array of type ```double``` is passed and there are no elements.  If that happens, the result will be 0.0. The method will also work if there are only two elements of type ```double```, as long as if one element can be considered the lowest value.
 
-JUnit test with proper input
+> JUnit test with proper input
 
 ```
 @Test
@@ -94,9 +94,10 @@ JUnit test with proper input
 
 * The, symptom, otherwise known as the output of both the inputs previously explained and depicted above is shown as a screenshot below.  
 
+> Output of JUnit tests in VSCode terminal
 ![Image](SymptomJUnitLab3.png)
 
-Note: In order to run the JUnit tests in a VSCode terminal on a Windows OS machine, the following code blocks must be used, specifically for the ArraysTest.java file.
+> Note: In order to run the JUnit tests in a VSCode terminal on a Windows OS machine, the following code blocks must be used, specifically for the ArraysTest.java file.
 
 ```
 local $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
@@ -105,7 +106,7 @@ local $ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.ru
 
 * The following code blocks below (1) show the method before the bug was fixed and (2) show the method after the bug was fixed.
 
-Before the code was changed
+> Before the code was changed
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -121,7 +122,7 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 
-After the code was changed
+> After the code was changed
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -147,3 +148,5 @@ static double averageWithoutLowest(double[] arr) {
 * The fix addresses the issue because the method now checks if the all the elements in the array are the same value as the lowest.  If that is true, then it takes the average of all the values since there is no lowest value.
 
 ## Part 3: Reflection
+
+> In week 2's lab, I learned how to make a web server and how a web server can work locally and remotely.  In order to use a web server locally, it is as simple as compiling and running the server in a terminal like a normal program.  However, in order to use it remotely, I learned to clone the server via git and the server would run through a remote computer which would allow me to use the server on a browser the same way that I could use it locally.  I also understood how to make a simple web server using Java, but it took some time to understand how the code in the file influences the behavior of the server.  I found it interesting that the path and query of a url heavily influences the behavior of the web server.  Overall, this is something that I learned in week 2's lab that I didn't know before.
