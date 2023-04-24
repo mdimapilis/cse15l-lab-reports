@@ -11,7 +11,9 @@
 ## Step 2: Remotely Connecting
 
 Note 1: If you know your UCSD course-specific account for CSE 15L, start at step 3.
+
 Note 2: In this step, code blocks ```like this``` will signify what is being typed and run on the remote server.
+
 Note 3: If you do not have Git installed on your device, you can install [GitHub desktop](https://desktop.github.com/) as it is necessary for remotely connecting.
 1. Visit this [link](https://sdacs.ucsd.edu/~icc/index.php) to find your UCSD course-specific account for CSE 15L.
 2. Follow the instructions on the site in order to reset your password as you will need your username and password for remotely connecting.
@@ -34,12 +36,12 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 ```ls -a```
 
 Note 1: ```cd``` is a command that changes the current working directory to the given path that is typed after.  But if a tilde is added to the command ```cd ~```, the relative path that is being referred to will refer to the absolute path.
-Note 2: The ```ls``` command prints out the list of files and folders in the path.
 
+Note 2: The ```ls``` command prints out the list of files and folders in the path.  And the ```-lat``` or ```-a``` suffix after the list command filters what contents are shown that are in the current directory.
 
-Note: Look at the image below to see an example.
+Note 3: Look at the image below to see an example.
 
-![Image](Commands.png)
+![Image](LSCommand.png)
 
 2. If there are any errors, check and understand the message that gets printed.
 3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
