@@ -45,5 +45,5 @@ Note 3: Look at the following images below to see an example of the list command
 
 ![Image](LSCommandResult.png)
 
-2. If there are any errors, make sure that it is not input error.
+2. If there are any errors, make sure that it is not user input error.
 3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
