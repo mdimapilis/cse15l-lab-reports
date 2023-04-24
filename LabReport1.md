@@ -39,9 +39,11 @@ Note 1: ```cd``` is a command that changes the current working directory to the 
 
 Note 2: The ```ls``` command prints out the list of files and folders in the path.  And the ```-lat``` or ```-a``` suffix after the list command filters what contents are shown that are in the current directory.
 
-Note 3: Look at the image below to see an example.
+Note 3: Look at the following images below to see an example of the list command being run via the terminal in VSCode.  The first image is the list command being typed out on the terminal.  The second image is the output of the given command working succesfully and printing out the contents of the directory.
 
 ![Image](LSCommand.PNG)
 
-2. If there are any errors, check and understand the message that gets printed.
+![Image](LSCommandResult.png)
+
+2. If there are any errors, make sure that it is not input error.  If it is not input error, check and understand the message that gets printed.
 3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
