@@ -95,6 +95,7 @@ Note: The method will still work properly if an array of type ```double``` is pa
 * The, symptom, otherwise known as the output of both the inputs previously explained and depicted above is shown as a screenshot below.  
 
 > Output of JUnit tests in VSCode terminal
+
 ![Image](SymptomJUnitLab3.png)
 
 > Note: In order to run the JUnit tests in a VSCode terminal on a Windows OS machine, the following code blocks must be used, specifically for the ArraysTest.java file.
@@ -107,6 +108,7 @@ local $ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.ru
 * The following code blocks below (1) show the method before the bug was fixed and (2) show the method after the bug was fixed.
 
 > Before the code was changed
+
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
@@ -123,6 +125,7 @@ static double averageWithoutLowest(double[] arr) {
 ```
 
 > After the code was changed
+
 ```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
