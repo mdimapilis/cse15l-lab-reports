@@ -113,6 +113,47 @@ local $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
 local $ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
 ```
 
+* The following code blocks below (1) show the method before the bug was fixed and (2) show the method after the bug was fixed.
 
+Before the code was changed
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+After the code was changed
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    int count = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+      else if(num == lowest) { count++;}
+    }
+    if(count == arr.length) {
+      double total = 0; 
+      for(double num : arr) { total += num; }
+      return total / arr.length;
+    }
+    return sum / (arr.length - 1);
+  }
+```
+
+* The fix addresses the issue because the method now checks if the all the elements in the array are the same value as the lowest.  If that is true, then it takes the average of all the values since there is no lowest value.
 
 ## Part 3: Reflection
