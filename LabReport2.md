@@ -151,8 +151,8 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 
-* The fix addresses the issue because the method now checks if the all the elements in the array are the same value as the lowest.  If that is true, then it takes the average of all the values since there is no lowest value.
+The fix addresses the issue because the method now checks if the all the elements in the array are the same value as the lowest.  If that is true, then it takes the average of all the values since there is no lowest value.
 
 ## Part 3: Reflection
 
-* In week 2's lab, I learned how to make a web server and how a web server can work locally and remotely.  In order to use a web server locally, it is as simple as compiling and running the server in a terminal like a normal program.  However, in order to use it remotely, I learned to clone the server via git and the server would run through a remote computer which would allow me to use the server on a browser the same way that I could use it locally.  I also understood how to make a simple web server using Java, but it took some time to understand how the code in the file influences the behavior of the server.  I found it interesting that the path and query of a url heavily influences the behavior of the web server.  Overall, this is something that I learned in week 2's lab that I didn't know before.
+In week 2's lab, I learned how to make a web server and how a web server can work locally and remotely.  In order to use a web server locally, it is as simple as compiling and running the server in a terminal like a normal program.  However, in order to use it remotely, I learned to clone the server via git and the server would run through a remote computer which would allow me to use the server on a browser the same way that I could use it locally.  I also understood how to make a simple web server using Java, but it took some time to understand how the code in the file influences the behavior of the server.  I found it interesting that the path and query of a url heavily influences the behavior of the web server.  Overall, this is something that I learned in week 2's lab that I didn't know before.
