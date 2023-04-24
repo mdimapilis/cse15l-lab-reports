@@ -41,7 +41,7 @@ Note 2: The ```ls``` command prints out the list of files and folders in the pat
 
 Note 3: Look at the image below to see an example.
 
-![Image](LSCommand.jpg)
+![Image](LSCommand.png)
 
 2. If there are any errors, check and understand the message that gets printed.
 3. To log out of the remote computer on your terminal you can use Ctrl - D (windows), Cmd-D (mac), or run ```exit``` in the terminal.
