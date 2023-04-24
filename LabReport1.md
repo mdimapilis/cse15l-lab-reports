@@ -26,12 +26,16 @@ Note 3: If you do not have Git installed on your device, you can install [GitHub
 
 ## Step 3: Trying Some Commands
 
-1. Type some of the following into your computer and on your remote computer and see what happens.
+1. Type some of the following commands into your computer and on your remote computer and see what happens.
 
 ```cd ~```
 ```cd```
 ```ls -lat```
 ```ls -a```
+
+Note 1: ```cd``` is a command that changes the current working directory to the given path that is typed after.  But if a tilde is added to the command ```cd ~```, the relative path that is being referred to will refer to the absolute path.
+Note 2: The ```ls``` command prints out the list of files and folders in the path.
+
 
 Note: Look at the image below to see an example.
 
