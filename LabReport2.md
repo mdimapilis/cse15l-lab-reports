@@ -49,14 +49,70 @@ The screenshots below are two uses of ```/add-message```.
 
 ![Image](StringServerAdd1.png)
 
-* Which methods in your code are called?
-* What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+* In the screenshot above, the methods in my code that are called are ```.getPath()``` ```.contains(Object object)``` ```.getQuery()``` and ```.split(String regex)```.
+* The relevant argument to the ```.getPath()``` method is the ```URI url``` parameter passed through the handleRequest method.  The relevant argument to the ```.contains(Object object)``` method is the string "/add-message" which checks if the correct path gets typed to keep track of a string.  The ```.getQuery()``` method gets the string after the "?" in the URL instance named url. The ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "Hello". 
+* From this specific request, the value of the ```String s``` field would be changed to the running string which would be "Hello", as portrayed in the image above.
+
 
 ![Image](StringServerAdd2.png)
 
+* In the screenshot above, the methods in my code that are called are the same as the methods in the image before.
+* The relevant arguments to the methods are the same as before except for the ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "How are you". 
+* From this specific request, the value of the ```String s``` field would be changed from "Hello" to the running string "How are you".  Additionally, since the value of ```String s``` field is not null this time, the value of the ```String finalS``` field would also be changed to the value of the s field concatenated with a new line and the running string, as noted by ```parameters[1]``` which is the second index of the ```parameters``` array which separates the query string by the "=" sign.
+
 
 ## Part 2: Bug Review
+
+
+Choose one of the bugs from lab 3.
+
+Provide:
+
+* A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+* An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+* The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+* The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+
+The bug chosen from lab 3 is the one found in the ```static double averageWithoutLowest(double[] arr)``` method.
+
+* The failure-inducing input for the buggy program is shown below in the code block as a JUnit test.  The method is supposed to to return the average of numbers in an array of type ```double``` without including the lowest value in the array.  However, this input will result in a failure because all the elements in the array are the same value and does not return the correct average since the method does not detect that there is no lowest value since all the elements are the same.
+
+JUnit test with failure-inducing input
+
+```
+@Test
+  public void testAvgWOutLow5() {
+    double[] doubleArr = {3.0, 3.0, 3.0, 3.0};
+    double result = ArrayExamples.averageWithoutLowest(doubleArr);
+    assertEquals(3.0, result, 0.0001);
+  }
+```
+
+* The input shown in the code block below is a JUnit test that does not induce a failure.  It does not induce a failure because there is value that can be considered the lowest and all the elements in the array are of type ```double``` so these meet all the requirements for the method to work properly.
+Note: The method will still work properly if an array of type ```double``` is passed and there are no elements.  If that happens, the result will be 0.0. The method will also work if there are only two elements of type ```double```, as long as if one element can be considered the lowest value.
+
+JUnit test with proper input
+
+```
+@Test
+  public void testAvgWOutLow2() {
+    double[] doubleArr = {2.0, 3.0, 1.0, 4.0};
+    double result = ArrayExamples.averageWithoutLowest(doubleArr);
+    assertEquals(3.0, result, 0.0001);
+  }
+```
+
+* The, symptom, otherwise known as the output of both the inputs previously explained and depicted above is shown as a screenshot below.  
+
+![Image](SymptomJUnitLab3.png)
+
+Note: In order to run the JUnit tests in a VSCode terminal on a Windows OS machine, the following code blocks must be used, specifically for the ArraysTest.java file.
+
+```
+local $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+local $ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ArrayTests
+```
+
 
 
 ## Part 3: Reflection
