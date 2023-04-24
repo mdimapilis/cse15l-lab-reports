@@ -55,7 +55,7 @@ The screenshots below are two uses of ```/add-message```.
 * The relevant argument to the ```.getPath()``` method is the ```URI url``` parameter passed through the handleRequest method.  The relevant argument to the ```.contains(Object object)``` method is the string "/add-message" which checks if the correct path gets typed to keep track of a string.  The ```.getQuery()``` method gets the string after the "?" in the URL instance named url. The ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "Hello". 
 * From this specific request, the value of the ```String s``` field would be changed to the running string which would be "Hello", as portrayed in the image above.
 
-> Seconf time using ```/add-message```.
+> Second time using ```/add-message```.
 
 ![Image](StringServerAdd2.png)
 
