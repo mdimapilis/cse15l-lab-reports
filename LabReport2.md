@@ -63,16 +63,6 @@ The screenshots below are two uses of ```/add-message```.
 
 ## Part 2: Bug Review
 
-
-Choose one of the bugs from lab 3.
-
-Provide:
-
-* A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-* An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-* The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-* The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
-
 The bug chosen from lab 3 is the one found in the ```static double averageWithoutLowest(double[] arr)``` method.
 
 * The failure-inducing input for the buggy program is shown below in the code block as a JUnit test.  The method is supposed to to return the average of numbers in an array of type ```double``` without including the lowest value in the array.  However, this input will result in a failure because all the elements in the array are the same value and does not return the correct average since the method does not detect that there is no lowest value since all the elements are the same.
