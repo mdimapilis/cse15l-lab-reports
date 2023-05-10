@@ -2,28 +2,32 @@
 
 ## Part 1: Web Server
 
-The code block below is the code for ```StringServer```.
+The code block below is the revised code for ```StringServer```.
+> Note: The code is now generalized to be able to add any number of strings.
 
 ```
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
 
 class Handler implements URLHandler {
 
     String s;
+    ArrayList<String> alList = new ArrayList<>();
 
     public String handleRequest(URI url) {
         if(url.getPath().contains("/add-message")) {
-            System.out.println("Path: " + url.getPath());
             String[] parameters = url.getQuery().split("=");
-            
-            String finalS;
-            if(s != null) {
-                finalS = s + "\n" + parameters[1];
-                return finalS;
+
+            s = "";
+
+            alList.add(parameters[1]);
+            for(String str : alList) {
+                s += str + "\n";
+
             }
-            s = parameters[1];
             return s;
+
 
         }
         else
@@ -51,9 +55,9 @@ The screenshots below are two uses of ```/add-message```.
 
 ![Image](StringServerAdd1.png)
 
-* In the screenshot above, the methods in my code that are called are ```.getPath()``` ```.contains(Object object)``` ```.getQuery()``` and ```.split(String regex)```.
-* The relevant argument to the ```.getPath()``` method is the ```URI url``` parameter passed through the handleRequest method.  The relevant argument to the ```.contains(Object object)``` method is the string "/add-message" which checks if the correct path gets typed to keep track of a string.  The ```.getQuery()``` method gets the string after the "?" in the URL instance named url. The ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "Hello". 
-* From this specific request, the value of the ```String s``` field would be changed to the running string which would be "Hello", as portrayed in the image above.
+* In the screenshot above, the methods in my code that are called are ```.getPath()``` ```.contains(Object object)``` ```.getQuery()``` ```.add(String object)``` and ```.split(String regex)```.
+* The relevant argument to the ```.getPath()``` method is the ```URI url``` parameter passed through the handleRequest method.  The relevant argument to the ```.contains(Object object)``` method is the string "/add-message" which checks if the correct path gets typed to keep track of a string.  The ```.getQuery()``` method gets the string after the "?" in the URL instance named url. The ``.add(String object)``` method adds the string to the ArrayList<String> called alList.  The ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "Hello". 
+* From this specific request, the elements inside the ```ArrayList<String> alList``` field would be changed from null and the running string "Hello" would be added via the ```.add(String object)``` method.  Then, the enhanced for loop in the handleRequest method would concatenate the elements of the alList field and update the ```String s``` field to "Hello", and that field would be returned, as portrayed in the image above.
 
 > Second time using ```/add-message```.
 
@@ -61,7 +65,7 @@ The screenshots below are two uses of ```/add-message```.
 
 * In the screenshot above, the methods in my code that are called are the same as the methods in the image before.
 * The relevant arguments to the methods are the same as before except for the ```.split(String regex)``` method takes in the string argument "=" to split up the query in order to get the running string which would be "How are you". 
-* From this specific request, the value of the ```String s``` field would be changed from "Hello" to the running string "How are you".  Additionally, since the value of ```String s``` field is not null this time, the value of the ```String finalS``` field would also be changed to the value of the s field concatenated with a new line and the running string, as noted by ```parameters[1]``` which is the second index of the ```parameters``` array which separates the query string by the "=" sign.
+* From this specific request, the elements inside the ```ArrayList<String> alList``` field would be changed from "Hello" and the running string "How are you" would be added.  Then, the enhanced for loop in the handleRequest method would concatenate the elements of the alList field and update the ```String s``` field to "Hello\nHow are you", as portrayed in the image above.
 
 
 ## Part 2: Bug Review
