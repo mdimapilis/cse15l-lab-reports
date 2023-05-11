@@ -156,7 +156,7 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 
-    The fix addresses the issue because the method now adds elements that are only greater than the lowest value then finds the average of those numbers.  If all the elements in the array are of the same value, then the number in the array is returned.
+The fix addresses the issue because the method now adds elements that are only greater than the lowest value then finds the average of those numbers.  If all the elements in the array are of the same value, then the number in the array is returned.
 
 ## Part 3: Reflection
 
