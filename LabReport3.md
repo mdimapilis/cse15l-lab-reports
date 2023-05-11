@@ -22,6 +22,7 @@ Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -N technical/911report/chapter-10.txt
 ```
 > After pressing enter with command: (Some of the output is shortened for simplicity, but the concept can still be understood.)
+
 ```
       1 
       2
@@ -39,12 +40,14 @@ technical/911report/chapter-10.txt
 Based on the example above, using the ```-N``` option with the ```less``` command along with a given file, in this case ```chapter-10.txt``` from the technical/911report directory, will print out a portion of the lines of content from the file with line numbers to the left of them.  Repeatedly pressing enter will keep printing out the contents of the file until it has reached the end of the file, as depicted below.
 
 >Before pressing enter with command:
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -N technical/biomed/ar149.txt
 ```
 
 >After pressing enter with command: (Some of the output is shortened for simplicity, but the concept can still be understood.)
+
 ```
       1 
       2
@@ -59,6 +62,7 @@ $ less -N technical/biomed/ar149.txt
 technical/biomed/ar149.txt
 ```
 >After pressing enter repeatedly until the end of the file is reached. (Some of the output is shortened for simplicity, but the concept can still be understood.)
+
 ```
     460         = peripheral blood mononuclear cells; PE = phycoerythrin;RA
     461         = rheumatoid arthritis; RANTES = regulated upon activation,
@@ -79,6 +83,7 @@ Another way to use ```less``` is with the ```-X``` option.
 Shown below are two examples of using the ```-X``` option for the ```less``` command.
 
 > Entering ```less``` command with ```-X``` option: (Some of the output is shortened for simplicity, but the concept can still be understood.)
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -X technical/biomed/ar140.txt
@@ -103,6 +108,7 @@ Using the ```-X``` option for the ```less``` command will print out a portion of
 
 
 > Note: the code block below shows the command with the command-line option being entered
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -X technical/plos/pmed.0020015.txt
@@ -113,6 +119,7 @@ $ less -X technical/plos/pmed.0020015.txt
         Introduction
 ```
 > Note: the code block below shows the behavior of the command-line option once the end of the file has been reached using the ```less``` command
+
 ```
         The likelihood that mechanisms other than anticapsular antibody confer immunity to
         pneumococcal disease has important implications with respect to vaccine design. As
@@ -137,11 +144,13 @@ A third way to use ```less``` is by using the ```-s``` option.
 Shown below are two examples of using the ```-s``` option for the ```less``` command.
 
 > Before pressing enter with command: 
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -s technical/911report/chapter-1.txt
 ```
 > After pressing enter with command: (Shortened for simplicity, but concept can still be understood)
+
 ```
  The details of what happened on the morning of September 11 are complex, but they play out a simple theme. NORAD and the FAA were unprepared for the type of attacks launched against the United States on September 11, 2001. They struggled, under difficult circumstances, to improvise a homeland defense against an unprecedented challenge they had never before encountered and had never trained to meet.
 
@@ -153,11 +162,13 @@ $ less -s technical/911report/chapter-1.txt
 The code blocks above show the ```-s``` option being used for the ```less``` command.  The behavior of the ```-s``` option is that it prints out the contents of the file but it reduces the amount of blank lines.
 
 > Before pressing enter with command:
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -s technical/biomed/rr74.txt
 ```
 > After pressing enter with command: (Shortened for simplicity)
+
 ```
         17, 18] suggesting an increase in lung eNOS and iNOS
         levels. We therefore hypothesized that NOS isoforms are
@@ -173,17 +184,20 @@ The example above shows similar behavior with a different file from the ```./tec
 
 > Note: in both examples above, ```q``` was entered, and the contents of the file were cleared from the screen.
 
+
 ---
-Finally, another way to use the ```less`` command is with the ```-M``` option.
+Finally, another way to use the ```less``` command is with the ```-M``` option.
 
 Shown below are two examples of using the ```-M``` option for the ```less``` command.
 
 > Before pressing enter with command:
+
 ```
 Michael MINGW64 ~/Documents/GitHub/docsearch (main)
 $ less -M technical/government/Media/pro_bono_efforts.txt
 ```
 > After pressing enter with command:
+
 ```
 Attorneys step up pro bono efforts
 As the city's need for services grows, area's firms urge
@@ -208,6 +222,7 @@ technical/government/Media/pro_bono_efforts.txt lines 1-41/76 53%
 In the code block above, the ```-M``` option will print out a portion of the contents of the file, just like with the ```-N``` option, but this time there are no line numbers and pressing enter repeatedly will not do anything. 
 
 >2nd example of using ```-M``` option: (Shortened for simplicity but the concept can still be understood.)
+
 ```
         2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
         redeemed social condition; to know even one life breathed easier because you have lived;
