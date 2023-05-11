@@ -134,7 +134,7 @@ static double averageWithoutLowest(double[] arr) {
 > After the code was changed
 
 ```
-static double averageWithoutLowest(double[] arr) {
+  static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
     for(double num: arr) {
@@ -143,19 +143,20 @@ static double averageWithoutLowest(double[] arr) {
     double sum = 0;
     int count = 0;
     for(double num: arr) {
-      if(num != lowest) { sum += num; }
-      else if(num == lowest) { count++;}
+      if(num != lowest) { sum += num;}
+    else if(num == lowest) { count++;}
     }
+
     if(count == arr.length) {
-      double total = 0; 
-      for(double num : arr) { total += num; }
-      return total / arr.length;
+      return lowest;
     }
-    return sum / (arr.length - 1);
+
+    return sum / (arr.length - count);
+    
   }
 ```
 
-The fix addresses the issue because the method now checks if the all the elements in the array are the same value as the lowest.  If that is true, then it takes the average of all the values since there is no lowest value.
+    The fix addresses the issue because the method now adds elements that are only greater than the lowest value then finds the average of those numbers.  If all the elements in the array are of the same value, then the number in the array is returned.
 
 ## Part 3: Reflection
 
