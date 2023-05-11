@@ -234,3 +234,6 @@ technical/plos/pmed.0020281.txt lines 1-40/40 (END)
 ```
 
 In the code block above, the ```-M``` option will print out the contents of the file if the file is short enough, as depicted above by the last line ```technical/plos/pmed.0020281.txt lines 1-40/40 (END)```.
+
+
+> The following sources were used: [Linux Command Less 1](https://www.hongkiat.com/blog/linux-command-less/) [Linux Command Less 2](https://linuxize.com/post/less-command-in-linux/)
