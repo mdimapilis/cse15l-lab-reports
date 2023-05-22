@@ -23,7 +23,7 @@ Step 5: Cloning fork of repository from my GitHub account
 ![Image](Step5.png)
 
 Keys pressed:
-```git clone git@github.com:mdimapilis/lab7.git``` ```<enter>```
+```git clone git@github.com:mdimapilis/lab7.git``` ```<enter>``` to clone lab7 repository from my GitHub.
 
 ---
 
