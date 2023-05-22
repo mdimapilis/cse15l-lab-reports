@@ -109,4 +109,7 @@ Keys pressed:
 ```git commit -m "Updated"``` ```<enter>``` to save all changes
 
 ![Image](Step9pt2.png)
+  
+Keys pressed:
+  
 ```git push``` ```<enter>``` to upload local repository to my GitHub repository that I cloned earlier.
