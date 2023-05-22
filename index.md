@@ -1,20 +1,14 @@
-*Hello* **world!**
+# Michael Dimapilis
+## Lab Reports Spring 2023
 
-# Testing
+> The following lab reports below are my own work unless otherwise stated.
 
-## Flourish
+[Lab Report 1](https://mdimapilis.github.io/cse15l-lab-reports/LabReport1.html)
 
-[Link](https://apple.com)
+[Lab Report 2](https://mdimapilis.github.io/cse15l-lab-reports/LabReport2.html)
 
-* eggs
-* milk
-* meat
+[Lab Report 3](https://mdimapilis.github.io/cse15l-lab-reports/LabReport3.html)
 
----
+[Lab Report 4](https://mdimapilis.github.io/cse15l-lab-reports/LabReport4.html)
 
-`Stuff` with backticks
-
-```
-# code block
-print '4 spaces'
-```
+[Lab Report 5](https://mdimapilis.github.io/cse15l-lab-reports/LabReport5.html)
