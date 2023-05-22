@@ -14,6 +14,7 @@ The image below is when I have an SSH key generated for my ieng6 account so I am
 ![Image](Step4.png)
 
 Keys pressed:
+
 ```cs15lsp23ph@ieng6.ucsd.edu``` ```<enter>``` to log in.
 
 ---
@@ -23,6 +24,7 @@ Step 5: Cloning fork of repository from my GitHub account
 ![Image](Step5.png)
 
 Keys pressed:
+
 ```git clone git@github.com:mdimapilis/lab7.git``` ```<enter>``` to clone lab7 repository from my GitHub.
 
 ---
@@ -33,6 +35,7 @@ Step 6: Running tests (failing)
 ![Image](Step6pt2.png)
 
 Keys pressed:
+
 ```cd lab7``` ```<enter>``` to change directory into lab7 repository to run tests
 
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` ```<enter>``` to compile all java files in lab7 directory
@@ -73,6 +76,7 @@ Keys pressed:
 ![Image](Step7pt5.png)
 
 Keys pressed:
+  
 ```:wq``` ```<enter>``` to exit vim and go back to terminal.
   
 ---
@@ -87,6 +91,7 @@ Step 8: Run tests (passed)
 
   
 Keys pressed:
+  
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` ```<enter>``` to compile all java files in lab7 directory
   
 ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` ```<enter>``` to show tests pass after ```ListExamples.java``` has been edited.
