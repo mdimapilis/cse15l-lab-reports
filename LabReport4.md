@@ -76,7 +76,9 @@ Step 8: Run tests (passed)
 ![Image](Step8.png)
 
 >Note: still in lab7 directory
+>Note: you can use a number of up arrows to access ```javac -cp``` and ```java -cp``` since those commands were already typed before and are in the history.
 
+  
 Keys pressed:
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` ```<enter>``` to compile all java files in lab7 directory
 ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` ```<enter>``` to show tests pass after ```ListExamples.java``` has been edited.
