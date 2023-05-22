@@ -2,6 +2,8 @@
 
 ## Command Line Tasks
 
+>Note: Starting from step 4 of lab 7 command line tasks
+
 Step 4: Log into ieng6
 
 >Note: Use your UCSD course-specific ieng6 account and credentials.  In general, you will have to type ```cs15lsp23xx@ieng6.ucsd.edu``` with ```xx``` replaced with your specific account details.
