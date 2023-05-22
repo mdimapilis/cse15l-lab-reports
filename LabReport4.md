@@ -31,7 +31,7 @@ Step 6: Running tests (failing)
 ![Image](Step6pt1.png)
 ![Image](Step6pt2.png)
 
-Keys pessed:
+Keys pressed:
 ```cd lab7``` ```<enter>``` to change directory into lab7 repository to run tests
 ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` ```<enter>``` to compile all java files in lab7 directory
 ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` ```<enter>``` to show tests fail
