@@ -56,7 +56,10 @@ Keys pressed:
 
 Keys pressed:
 
-```/index1 +``` ```<enter>``` to find ```index1 +``` in the file. Cursor is at first ```index1 +``` in ```merge``` method so press arrow down key 14 times and right arrow key 3 times.
+```/index1 +``` ```<enter>``` to find ```index1 +``` in the file. 
+
+```<down><down><down><down><down><down><down><down><down><down><down><down><down><down>``` ```<right><right><right>``` Cursor is at first ```index1 +``` in ```merge``` method so press arrow down key 14 times and right arrow key 3 times.
+
 
 ![Image](Step7pt3.png)
 
