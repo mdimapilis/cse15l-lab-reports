@@ -1,7 +1,7 @@
 # Michael Dimapilis
 ## Lab Reports Spring 2023
 
-> The following lab reports below are my own work unless otherwise stated.
+**The following lab reports below are my own work unless otherwise stated.**
 
 [Lab Report 1](https://mdimapilis.github.io/cse15l-lab-reports/LabReport1.html)
 
